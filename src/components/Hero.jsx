@@ -8,7 +8,7 @@ export default function Hero(props) {
                     <div className="name">HMD KIMIA UI 2024</div>
                     <div className="tagline">Salurkan asa, selaraskan makna</div>
                     <div className="buttons">
-                    <a href="#"><div className="button about">Tentang Kami</div></a>
+                    <a href="#tentang"><div className="button about-us">Tentang Kami</div></a>
                     <a href="#"><div className="button contact">Kontak</div></a>
                     </div>
                 </div>

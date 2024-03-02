@@ -1,7 +1,53 @@
 @import "../App.scss";
 
 .about {
-    .header {
-        color: black;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 580px;
+  background-color: $sec-color;
+
+  .slider {
+    @include flex(center, end);
+    flex-direction: column;
+    padding-right: 35px;
+    gap: 20px;
+
+    .container {
+      width: 480px;
+      height: 480px;
+      background-color: $ter-color;
+
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        object-position: center;
+      }
     }
+
+    .indicator {
+      width: 480px;
+      height: 24px;
+      background-color: $ter-color;
+    }
+  }
+
+  .text {
+    width: 350px;
+    height: max-content;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30%;
+    margin-left: 10%;
+
+    .header {
+      font-weight: bold;
+      font-size: 32px;
+    }
+
+    .explain {
+    }
+  }
 }

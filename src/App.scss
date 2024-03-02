@@ -1,5 +1,18 @@
-$base-color: #711DB0;
-$sec-color: #C21292;
-$ter-color: #EF4040;
-$quar-color: #FFA732;
+// Color
+$base-color: #711db0;
+$sec-color: #c21292;
+$ter-color: #ef4040;
+$quar-color: #ffa732;
 $grey-color: #d4d4d4;
+
+// Utility
+@mixin flex($justify: default, $align: default, $dir: default) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $dir;
+}
+
+.main-container {
+  font-family: "Poppins", sans-serif;
+}

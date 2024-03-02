@@ -1,0 +1,53 @@
+@import "../App.scss";
+
+.team {
+  width: 100%;
+  background-color: $base-color;
+  padding: 24px 0;
+
+  .header {
+    width: 100%;
+    // background-color: aquamarine;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .inti {
+    @include flex($dir: column);
+    gap: 54px;
+    padding: 24px 0;
+
+    .header-inti {
+      font-size: 28px;
+      color: white;
+      text-align: center;
+    }
+    .kahim {
+      @include flex(center, center);
+    }
+    .pi {
+      @include flex(space-evenly);
+    }
+  }
+
+  .birdep {
+
+    .header-birdep {
+      padding: 54px 0;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .cards-birdep {
+      padding-top: 54px;
+      @include flex(space-evenly);
+
+      .card {
+        &:nth-child(2) {
+          margin-top: -54px;
+        }
+      }
+    }
+  }
+}
