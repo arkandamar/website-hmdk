@@ -13,6 +13,12 @@ $grey-color: #d4d4d4;
   flex-direction: $dir;
 }
 
+@mixin absolute-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .main-container {
   font-family: "Poppins", sans-serif;
 }

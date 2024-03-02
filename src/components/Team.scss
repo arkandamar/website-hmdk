@@ -3,20 +3,20 @@
 .team {
   width: 100%;
   background-color: $base-color;
-  padding: 24px 0;
+  padding: 48px 0;
 
   .header {
-    width: 100%;
     // background-color: aquamarine;
     font-size: 32px;
     color: white;
     font-weight: bold;
+    padding: 0 96px;
   }
 
   .inti {
     @include flex($dir: column);
     gap: 54px;
-    padding: 24px 0;
+    padding-top: 72px;
 
     .header-inti {
       font-size: 28px;
@@ -37,6 +37,8 @@
       padding: 54px 0;
       text-align: center;
       font-size: 28px;
+      color: white;
+      text-align: center;
     }
 
     .cards-birdep {

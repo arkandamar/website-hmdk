@@ -9,7 +9,7 @@ export default function Hero(props) {
                     <div className="tagline">Salurkan asa, selaraskan makna</div>
                     <div className="buttons">
                     <a href="#tentang"><div className="button about-us">Tentang Kami</div></a>
-                    <a href="#"><div className="button contact">Kontak</div></a>
+                    <a href="#"><div className="button contact-us">Kontak</div></a>
                     </div>
                 </div>
             </div>
