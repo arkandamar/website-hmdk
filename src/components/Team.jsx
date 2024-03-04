@@ -28,7 +28,10 @@ let bencol = {
 export default function Team(props) {
   return (
     <div id="team" className="team">
-      <div className="header">Tim HMD Kimia UI</div>
+      <div className="text">
+        <div className="sub-header">Bertemu dengan Tim</div>
+        <div className="header">Tim HMD Kimia 2024</div>
+      </div>
       <div className="inti">
         <div className="header-inti">Pengurus Inti</div>
         <div className="kahim">

@@ -5,12 +5,20 @@
   background-color: $base-color;
   padding: 48px 0;
 
-  .header {
-    // background-color: aquamarine;
-    font-size: 32px;
+  .text {
+    @include flex($dir: column);
+    margin: 0 64px;
+    gap: 14px;
     color: white;
-    font-weight: bold;
-    padding: 0 96px;
+
+    .sub-header {
+      font-size: 24px;
+    }
+
+    .header {
+      font-size: 40px;
+      font-weight: bold;
+    }
   }
 
   .inti {
@@ -32,7 +40,6 @@
   }
 
   .birdep {
-
     .header-birdep {
       padding: 54px 0;
       text-align: center;
