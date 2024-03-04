@@ -3,18 +3,18 @@
 .about {
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 580px;
+  height: 600px;
   background-color: $sec-color;
 
   .slider {
-    @include flex(center, end);
+    @include flex($justify: center);
     flex-direction: column;
-    padding-right: 35px;
+    padding: 0 $side-padding;
     gap: 20px;
 
     .container {
-      width: 480px;
-      height: 480px;
+      width: 500px;
+      height: 500px;
       background-color: $ter-color;
 
       img {
@@ -23,12 +23,6 @@
         object-fit: cover;
         object-position: center;
       }
-    }
-
-    .indicator {
-      width: 480px;
-      height: 24px;
-      background-color: $ter-color;
     }
   }
 
@@ -44,7 +38,7 @@
 
     .header {
       font-weight: bold;
-      font-size: 32px;
+      font-size: $xl;
     }
 
     .explain {

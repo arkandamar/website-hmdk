@@ -1,5 +1,5 @@
 import "./About.scss";
-import Japan from "../assets/japan.jpg"
+import Japan from "../assets/japan.jpg";
 
 export default function About(props) {
   return (
@@ -8,7 +8,6 @@ export default function About(props) {
         <div className="container">
           <img src={Japan} alt="" srcset="" />
         </div>
-        <div className="indicator"></div>
       </div>
       <div className="text">
         <div className="header">Tentang Kami</div>

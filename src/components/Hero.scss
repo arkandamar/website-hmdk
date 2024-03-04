@@ -15,7 +15,7 @@ a {
 
   .header {
     @include flex($align: center);
-    padding: 0 132px;
+    padding: 0 $side-padding;
 
     .name {
       font-size: 36px;

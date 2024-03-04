@@ -7,7 +7,7 @@
 
   .text {
     @include flex($dir: column);
-    margin: 0 64px;
+    margin: 0 $side-padding;
     gap: 14px;
     color: white;
 
@@ -16,7 +16,7 @@
     }
 
     .header {
-      font-size: 40px;
+      font-size: $xl;
       font-weight: bold;
     }
   }
@@ -24,7 +24,7 @@
   .inti {
     @include flex($dir: column);
     gap: 54px;
-    padding-top: 72px;
+    padding: 72px 0;
 
     .header-inti {
       font-size: 28px;
@@ -35,7 +35,8 @@
       @include flex(center, center);
     }
     .pi {
-      @include flex(space-evenly);
+      @include flex(center);
+      gap: 80px;
     }
   }
 
@@ -50,7 +51,8 @@
 
     .cards-birdep {
       padding-top: 54px;
-      @include flex(space-evenly);
+      @include flex($justify: center);
+      gap: 80px;
 
       .card {
         &:nth-child(2) {

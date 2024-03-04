@@ -6,6 +6,12 @@ $ter-color: #ef4040;
 $quar-color: #ffa732;
 $grey-color: #d4d4d4;
 
+// Layouting
+$side-padding: 172px;
+
+// Sizing
+$xl: 40px;
+
 // Utility
 @mixin flex($justify: default, $align: default, $dir: default) {
   display: flex;
