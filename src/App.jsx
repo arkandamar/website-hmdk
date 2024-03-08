@@ -3,8 +3,8 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Team from "./components/Team";
-import Contact from "./components/Contact";
 import Mission from "./components/Mission";
+import Birdep from "./components/Birdep";
 import "./App.scss";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <Mission></Mission>
       <About></About>
       <Team></Team>
-      <Contact></Contact>
+      <Birdep></Birdep>
     </div>
   );
 }

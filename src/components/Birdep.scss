@@ -1,0 +1,13 @@
+@import "../App.scss";
+
+.biro-departemen {
+  background-color: red;
+  width: 100%;
+  height: 1080px;
+
+  .header {
+    font-size: $xl;
+    color: white;
+    font-weight: bold;
+  }
+}
