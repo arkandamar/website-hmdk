@@ -1,13 +1,109 @@
 @import "../App.scss";
 
+// Variable
+$background-color: $sec-color;
+$div-color: $base-color;
+$div-hover-color: $dark-sec-color;
+
 .biro-departemen {
-  background-color: red;
   width: 100%;
-  height: 1080px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
 
   .header {
     font-size: $xl;
-    color: white;
     font-weight: bold;
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 36px;
+  }
+
+  .biros {
+    $grid-column: 100px;
+    $grid-row: 200px;
+
+    display: grid;
+    grid-template-columns: repeat(9, $grid-column);
+    grid-template-rows: repeat(2, $grid-row);
+    justify-content: center;
+    gap: 10px;
+
+    div {
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      border-radius: 16px;
+      background-color: $div-color;
+      @include flex(center, center);
+
+      &:hover {
+        background-color: $div-hover-color;
+        cursor: pointer;
+        color: $grey-color;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        grid-column-start: span 3;
+      }
+
+      &:nth-child(4) {
+        grid-column-start: span 4;
+      }
+      &:nth-child(5) {
+        grid-column-start: span 5;
+      }
+    }
+  }
+
+  .departemens {
+    $grid-column: 100px;
+    $grid-row: 200px;
+
+    display: grid;
+    grid-template-columns: repeat(9, $grid-column);
+    grid-template-rows: repeat(3, $grid-row);
+    justify-content: center;
+    gap: 10px;
+
+    div {
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      border-radius: 16px;
+      background-color: $div-color;
+      @include flex(center, center);
+
+      &:hover {
+        background-color: $div-hover-color;
+        cursor: pointer;
+        color: $grey-color;
+      }
+
+      &:nth-child(1) {
+        grid-column-start: span 5;
+      }
+      &:nth-child(2) {
+        grid-column-start: span 4;
+      }
+      &:nth-child(3) {
+        grid-column-start: span 3;
+      }
+      &:nth-child(4) {
+        grid-column-start: span 6;
+      }
+      &:nth-child(5) {
+        grid-column-start: span 4;
+      }
+      &:nth-child(6) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(7) {
+        grid-column-start: span 3;
+      }
+    }
   }
 }

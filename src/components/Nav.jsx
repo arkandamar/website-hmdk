@@ -14,7 +14,7 @@ export default function Nav(props) {
           <a href="#team">Tim</a>
         </li>
         <li>
-          <a href="#">Biro-Departemen</a>
+          <a href="#birdep">Biro-Departemen</a>
         </li>
         <li>
           <a href="#">Dokumentasi</a>
