@@ -24,7 +24,7 @@ a {
     }
 
     .tagline {
-      font-size: 24px;
+      font-size: 20px;
     }
 
     .buttons {
@@ -60,12 +60,11 @@ a {
       .button {
         width: 140px;
         height: 44px;
-        border-radius: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        border: 2px solid $sec-color;
+        border: 1px solid $sec-color;
       }
 
       .button:hover {

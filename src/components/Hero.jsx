@@ -7,7 +7,7 @@ export default function Hero(props) {
     <div className="hero">
       <div className="header">
         <div>
-          <div className="name">Selamat Datang di HMD Kimia</div>
+          <div className="name">Selamat Datang di HMD Kimia FMIPA UI</div>
           <div className="tagline">Salurkan asa, selaraskan makna</div>
           <div className="buttons">
             <div className="button about-us">

@@ -28,11 +28,11 @@
         align-items: center;
         color: $dark-base-color;
         height: inherit;
-        padding: 0 18px;
+        padding: 0 20px;
 
         &:hover {
           color: white;
-          background-color: $sec-color;
+          background-color: $dark-sec-color;
         }
       }
     }
@@ -54,6 +54,7 @@
         z-index: 999;
         transition: all 100ms;
         border: 1px solid $dark-base-color;
+        background-color: white;
 
         a {
           display: block;
@@ -80,6 +81,6 @@
 
   .progress {
     height: inherit;
-    background-color: $dark-base-color;
+    background-color: $sec-color;
   }
 }

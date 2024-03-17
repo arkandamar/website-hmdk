@@ -14,8 +14,8 @@ function App() {
     <div className="main-container">
       <Nav></Nav>
       <Hero></Hero>
-      <Mission></Mission>
       <About></About>
+      <Mission></Mission>
       <Team></Team>
       <Birdep></Birdep>
     </div>

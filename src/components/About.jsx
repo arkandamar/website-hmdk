@@ -12,9 +12,10 @@ export default function About(props) {
       <div className="text">
         <div className="header">Tentang Kami</div>
         <div className="explain">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          vero atque minus eius reprehenderit iure molestias sed nobis.
-          Aspernatur, itaque id. Sunt, praesentium nam?
+          Himpunan Mahasiswa Departemen Kimia (HMDK) FMIPA UI adalah sebuah
+          organisasi mahasiswa di lingkup Departemen Kimia yang memiliki
+          peran mengembangkan keterampilan, skill, minat dan bakat
+          mahasiswa Departemen Kimia FMIPA UI.
         </div>
       </div>
     </div>
