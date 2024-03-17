@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   height: 600px;
-  background-color: $sec-color;
+  background-color: white;
 
   .slider {
     @include flex($justify: center);
@@ -29,7 +29,7 @@
   .text {
     width: 350px;
     height: max-content;
-    color: white;
+    color: $base-color;
     display: flex;
     flex-direction: column;
     gap: 20px;

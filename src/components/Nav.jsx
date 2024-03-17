@@ -5,7 +5,7 @@ export default function Nav(props) {
   const [scroll, setScroll] = useState(window.scrollY);
   const [progress, setProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
-  const scrollLimit = 55; // Detect scroll when pass the limit
+  const scrollLimit = 60; // Detect scroll when pass the limit
 
   const handleNavigation = (e) => {
     //? navigation

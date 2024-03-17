@@ -12,7 +12,9 @@ export default function Hero(props) {
           <div className="buttons">
             <div className="button about-us">
               Tentang
-              <img src={Arrow} />
+              <div className="container">
+                <img className="arrow" src={Arrow} />
+              </div>
             </div>
             <div className="button contact-us">Kontak</div>
           </div>
