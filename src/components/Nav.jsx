@@ -5,7 +5,7 @@ export default function Nav(props) {
   const [scroll, setScroll] = useState(window.scrollY);
   const [progress, setProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
-  const scrollLimit = 50; // Detect scroll when pass the limit
+  const scrollLimit = 55; // Detect scroll when pass the limit
 
   const handleNavigation = (e) => {
     //? navigation
@@ -60,18 +60,14 @@ export default function Nav(props) {
           <li className="tentang-kami">
             <a href="#tentang">Tentang Kami</a>
             <div
-              style={{ top: `${scrollLimit}px` }}
+              style={{
+                top: `${scrollLimit}px`,
+              }}
               className="dropdown-content"
             >
               <a href="#">Tim Kami</a>
               <a href="#">Biro & Departemen</a>
             </div>
-          </li>
-          <li>
-            <a href="#team">Tim</a>
-          </li>
-          <li>
-            <a href="#birdep">Biro-Departemen</a>
           </li>
           <li>
             <a href="#">Dokumentasi</a>
