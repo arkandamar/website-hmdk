@@ -7,7 +7,7 @@
   top: 0;
   z-index: 99;
   transition: transform 200ms;
-  border-bottom: 1px solid $base-color;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
 
   .menu-list {
     font-family: "Poppins", sans-serif;
@@ -51,20 +51,20 @@
         min-width: 160px;
         width: max-content;
         height: max-content;
-        z-index: 999;
+        z-index: 90;
         transition: all 100ms;
-        border: 1px solid $dark-base-color;
         background-color: white;
 
         a {
           display: block;
           padding: 18px 16px;
           text-decoration: none;
-          color: $dark-base-color;
+          background-color: $sec-color;
+          color: white;
 
           &:hover {
             background-color: $dark-sec-color;
-            color: white;
+            color: $grey-color;
           }
         }
       }

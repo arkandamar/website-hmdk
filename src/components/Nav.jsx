@@ -53,7 +53,7 @@ export default function Nav(props) {
         }}
         className="nav"
       >
-        <div className="menu-list">
+        <ul className="menu-list">
           <li>
             <a href="#">Beranda</a>
           </li>
@@ -75,7 +75,7 @@ export default function Nav(props) {
           <li>
             <a href="#">Kontak</a>
           </li>
-        </div>
+        </ul>
       </div>
       <div
         style={{

@@ -5,17 +5,17 @@ import About from "./components/About";
 import Team from "./components/Team";
 import Mission from "./components/Mission";
 import Birdep from "./components/Birdep";
+import Event from "./components/Event";
 import "./App.scss";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="main-container">
       <Nav></Nav>
       <Hero></Hero>
       <About></About>
       <Mission></Mission>
+      <Event></Event>
       <Team></Team>
       <Birdep></Birdep>
     </div>
