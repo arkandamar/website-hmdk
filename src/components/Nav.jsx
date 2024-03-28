@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import Arrow from "../assets/arrow.png";
 import "./Nav.scss";
 
 export default function Nav(props) {
   const [scroll, setScroll] = useState(window.scrollY);
   const [progress, setProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
+  const [isClick, setIsClick] = useState(false);
   const scrollLimit = 60; // Detect scroll when pass the limit
 
   const handleNavigation = (e) => {
@@ -14,6 +16,7 @@ export default function Nav(props) {
     const diff = window.scrollY - scroll;
     if (diff > scrollLimit) {
       setIsVisible(false);
+      setIsClick(false);
     }
 
     if (diff <= 0 && diff < -scrollLimit) {
@@ -58,15 +61,27 @@ export default function Nav(props) {
             <a href="#">Beranda</a>
           </li>
           <li className="tentang-kami">
-            <a href="#tentang">Tentang Kami</a>
-            <div
-              style={{
-                top: `${scrollLimit}px`,
-              }}
-              className="dropdown-content"
-            >
-              <a href="#">Tim Kami</a>
-              <a href="#">Biro & Departemen</a>
+            <div className="dropdown">
+              <a
+                onClick={() => setIsClick(!isClick)}
+                className={"main-nav " + (isClick && "active")}
+                href="javascript:void(null)"
+              >
+                Tentang Kami
+                <img className="arrow" src={Arrow} />
+              </a>
+              <a
+                className={"dropdown-nav " + (isClick && "drop")}
+                href="javascript:void(null)"
+              >
+                Tim Kami
+              </a>
+              <a
+                className={"dropdown-nav " + (isClick && "drop")}
+                href="javascript:void(null)"
+              >
+                Biro-Departemen
+              </a>
             </div>
           </li>
           <li>
