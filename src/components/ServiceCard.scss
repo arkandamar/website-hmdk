@@ -1,0 +1,51 @@
+@import "../App.scss";
+
+.service-card {
+  @include flex($justify: space-between, $dir: column);
+  width: 100%;
+  aspect-ratio: 10/12;
+  border-radius: 12px;
+  overflow: hidden;
+  color: $sec-color;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
+
+  .picture {
+    width: 100%;
+    aspect-ratio: 3/2;
+    background-color: $sec-color;
+  }
+
+  .text {
+    @include flex($justify: space-evenly, $dir: column);
+    gap: 16px;
+    padding: 24px;
+
+    .mainheader {
+      font-size: $l * 2/3;
+      font-weight: bold;
+      color: $base-color;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      color: $sec-color;
+
+      .container {
+        @include flex($align: center);
+        width: 24px;
+
+        .arrow {
+          width: 18px;
+          transition: transform 200ms;
+        }
+      }
+
+      &:hover .arrow {
+        transform: translateX(4px);
+      }
+    }
+  }
+}

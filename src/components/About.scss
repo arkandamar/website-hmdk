@@ -6,11 +6,12 @@
   background-color: white;
   padding: ($side-padding/2) $side-padding;
   gap: 16px;
+  cursor: default;
 
   .header {
+    @include flex(center, center);
     grid-column-start: span 12;
     margin: 16px 0;
-    @include flex(center, center);
     font-size: $xl;
     font-weight: bold;
     color: $base-color;

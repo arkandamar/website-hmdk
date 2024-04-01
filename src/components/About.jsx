@@ -36,7 +36,7 @@ export default function About(props) {
           <h5 className="subheader">Fungsionaris</h5>
         </div>
         <div className="birdep box">
-          <div className="number">13+</div>
+          <div className="number">11+</div>
           <h5 className="subheader">Biro dan Departemen</h5>
         </div>
         <div className="proker box">

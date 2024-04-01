@@ -14,8 +14,8 @@ function App() {
       <Nav></Nav>
       <Hero></Hero>
       <About></About>
-      <Mission></Mission>
       <Event></Event>
+      <Mission></Mission>
       <Team></Team>
       <Birdep></Birdep>
     </div>
