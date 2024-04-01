@@ -65,12 +65,12 @@ a {
         justify-content: center;
         cursor: pointer;
         border: 1px solid $sec-color;
-      }
 
-      .button:hover {
-        border-color: $dark-sec-color;
-        background-color: $dark-sec-color;
-        color: $grey-color;
+        &:hover {
+          border-color: $dark-sec-color;
+          background-color: $dark-sec-color;
+          color: $grey-color;
+        }
       }
     }
   }

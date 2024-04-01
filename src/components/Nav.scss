@@ -8,6 +8,28 @@
   z-index: 99;
   transition: transform 100ms;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+  @include flex($align: center, $justify: space-between);
+
+  .logo-container {
+    @include flex(center, center);
+    margin-right: 40px;
+    margin-left: $side-padding;
+
+    gap: 10px;
+    .logo {
+      width: 35px;
+      height: 35px;
+    }
+    .logo-text {
+      font-size: 14px;
+      font-weight: bold;
+      color: $dark-base-color;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
   .menu-list {
     font-family: "Poppins", sans-serif;
@@ -15,6 +37,7 @@
     height: inherit;
     list-style: none;
     @include flex(center, center);
+    margin-right: $side-padding;
 
     li {
       height: inherit;

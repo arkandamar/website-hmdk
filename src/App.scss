@@ -32,3 +32,38 @@ $l: 32px;
 .main-container {
   font-family: "Poppins", sans-serif;
 }
+
+// Component
+@mixin first-button {
+  width: 140px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid $sec-color;
+  gap: 12px;
+  background-color: $sec-color;
+  color: white;
+
+  .container {
+    @include flex($align: center);
+    width: 24px;
+
+    .arrow {
+      width: 18px;
+      transition: transform 200ms;
+      filter: invert(100%);
+    }
+  }
+
+  &:hover {
+    border-color: $dark-sec-color;
+    background-color: $dark-sec-color;
+    color: $grey-color;
+  }
+
+  &:hover .arrow {
+    transform: translateX(4px);
+  }
+}

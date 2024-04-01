@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Arrow from "../assets/arrow.png";
+import Logo from "../assets/logo-hmdk.png";
 import "./Nav.scss";
 
 export default function Nav(props) {
@@ -56,6 +57,10 @@ export default function Nav(props) {
         }}
         className="nav"
       >
+        <div className="logo-container">
+          <img className="logo" src={Logo} />
+          <h1 className="logo-text">HMD Kimia UI 2024</h1>
+        </div>
         <ul className="menu-list">
           <li>
             <a href="#">Beranda</a>
