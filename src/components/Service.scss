@@ -1,0 +1,90 @@
+@import "../App.scss";
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0 $side-padding;
+  gap: 32px;
+
+  .header {
+    @include flex(center, center);
+    grid-column-start: span 12;
+    margin: 16px 0;
+    font-size: $xl;
+    font-weight: bold;
+    color: $base-color;
+  }
+
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-start: span 12;
+    gap: 32px;
+
+    .box {
+      grid-column: span 3;
+      aspect-ratio: 1/1;
+      border: 1px solid $sec-color;
+      background-color: white;
+      color: $sec-color;
+      @include flex(center, center);
+      cursor: pointer;
+      position: relative;
+      padding: 18px;
+      overflow: hidden;
+
+      .title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .text {
+        position: absolute;
+        text-align: center;
+        visibility: hidden;
+        @include flex($align: center, $justify: space-between, $dir: column);
+        padding: 12px;
+        gap: 12px;
+
+        .explain {
+        }
+
+        .more {
+          padding: 6px;
+          position: relative;
+          width: max-content;
+
+          &:hover::after {
+            width: 80%;
+          }
+
+          &::after {
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width 200ms ease;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: $sec-color;
+        color: white;
+      }
+
+      &:hover .title {
+        visibility: hidden;
+      }
+
+      &:hover .text {
+        visibility: visible;
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ import Team from "./components/Team";
 import Mission from "./components/Mission";
 import Birdep from "./components/Birdep";
 import Event from "./components/Event";
+import Service from "./components/Service";
 import "./App.scss";
 
 function App() {
@@ -15,9 +16,8 @@ function App() {
       <Hero></Hero>
       <About></About>
       <Event></Event>
+      <Service></Service>
       <Mission></Mission>
-      <Team></Team>
-      <Birdep></Birdep>
     </div>
   );
 }

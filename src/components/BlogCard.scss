@@ -17,16 +17,21 @@
 
   .text {
     @include flex($justify: space-evenly, $dir: column);
-    gap: 16px;
+    gap: 12px;
     padding: 24px;
 
     .mainheader {
-      font-size: $l * 2/3;
+      font-size: $m;
       font-weight: bold;
       color: $base-color;
     }
 
+    .explain {
+      font-size: $sm;
+    }
+    
     .button {
+      font-size: $bs;
       display: flex;
       align-items: center;
       gap: 12px;
@@ -40,6 +45,7 @@
         .arrow {
           width: 18px;
           transition: transform 200ms;
+          @include sec-color-filter;
         }
       }
 

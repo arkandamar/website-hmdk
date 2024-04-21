@@ -1,7 +1,7 @@
-import "./ServiceCard.scss";
+import "./BlogCard.scss";
 import Arrow from "../assets/right-arrow.png";
 
-export default function ServiceCard(props) {
+export default function BlogCard(props) {
   return (
     <div style={props.style} className="service-card">
       <div className="picture"></div>
@@ -12,7 +12,7 @@ export default function ServiceCard(props) {
           Necessitatibus, corrupti.
         </div>
         <div className="button">
-          Pelajari
+          Baca
           <div className="container">
             <img className="arrow" src={Arrow} />
           </div>

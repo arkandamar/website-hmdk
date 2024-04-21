@@ -8,12 +8,35 @@ $quar-color: #ffa732;
 $grey-color: #d4d4d4;
 
 // Layouting
-$side-padding: 172px;
+$side-padding: 200px;
 $top-padding: 44px;
 
 // Sizing
 $xl: 40px;
 $l: 32px;
+$m: 24px;
+$bs: 16px;
+$sm: 14px;
+$xs: 12px;
+$xxs: 10px;
+
+// Filter
+@mixin base-color-filter {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(80%) saturate(6298%)
+    hue-rotate(282deg) brightness(35%) contrast(100%);
+}
+@mixin sec-color-filter {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(43%) saturate(7300%)
+    hue-rotate(306deg) brightness(89%) contrast(101%);
+}
+@mixin dark-sec-color-filter {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(33%) saturate(5043%)
+    hue-rotate(294deg) brightness(90%) contrast(115%);
+}
+@mixin grey-color-filter {
+  filter: brightness(0) saturate(100%) invert(96%) sepia(0%) saturate(1588%)
+    hue-rotate(142deg) brightness(92%) contrast(88%);
+}
 
 // Utility
 @mixin flex($justify: default, $align: default, $dir: default) {

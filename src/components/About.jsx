@@ -32,7 +32,7 @@ export default function About(props) {
       </div>
       <div className="info">
         <div className="staff box">
-          <div className="number">54+</div>
+          <div className="number">130+</div>
           <h5 className="subheader">Fungsionaris</h5>
         </div>
         <div className="birdep box">

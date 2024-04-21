@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   background-color: white;
-  padding: ($side-padding/2) $side-padding;
+  padding: calc($side-padding/2) $side-padding;
   gap: 16px;
   cursor: default;
 

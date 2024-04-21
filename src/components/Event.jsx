@@ -1,6 +1,5 @@
 import "./Event.scss";
-import Japan from "../assets/japan.jpg";
-import ServiceCard from "./ServiceCard";
+import BlogCard from "./BlogCard";
 
 export default function Event(props) {
   return (
@@ -9,9 +8,9 @@ export default function Event(props) {
         <h3 className="mainheader">Warta Terkini</h3>
       </div>
       <div className="card-container">
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
       </div>
       <div className="container-selengkapnya">
         <div className="selengkapnya">Selengkapnya</div>
